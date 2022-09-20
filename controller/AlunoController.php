@@ -3,6 +3,7 @@ include_once '../conexao/Conexao.php';
 include_once '../model/Pessoa.php';
 include_once '../model/Aluno.php';
 include_once '../dao/AlunoDAO.php';
+include_once '../model/Funcoes.php';
 
 // Retirando espaços no início e final de uma string
 
@@ -11,13 +12,16 @@ include_once '../dao/AlunoDAO.php';
 }
 
 array_walk($_POST, 'trimValue'); */
+//$data = array_map('trim', $_POST);
 
- $data = array_map('trim', $_POST);
+$data = new Funcoes();
+$data->limpardados($data); 
 
-$data = array_map('htmlspecialchars', $data);
+ 
+ //$data = array_map('htmlspecialchars', $data);
 
 
-function limpardados($data){};
+//function limpardados($data){};
 
 
 // $filters = array(
