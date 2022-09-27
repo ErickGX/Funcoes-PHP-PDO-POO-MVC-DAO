@@ -1,5 +1,6 @@
 --DROP DATABASE IF EXISTS bdlocker;
 
+
 CREATE DATABASE IF NOT EXISTS bdlocker;
 
 USE bdlocker;
@@ -125,3 +126,10 @@ CREATE TABLE notificacao (
 */
 
 SET AUTOCOMMIT = 0;
+
+
+
+
+
+
+---
